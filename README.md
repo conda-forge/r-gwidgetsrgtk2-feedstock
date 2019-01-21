@@ -1,7 +1,9 @@
+<!--
+# -*- mode: jinja -*-
+-->
+
 About r-gwidgetsrgtk2
 =====================
-
-[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
 
 Home: https://CRAN.R-project.org/package=gWidgetsRGtk2
 
@@ -16,9 +18,8 @@ Summary: Port of the gWidgets API to the RGtk2 toolkit.
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-gwidgetsrgtk2-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-gwidgetsrgtk2-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/r-gwidgetsrgtk2-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-gwidgetsrgtk2-feedstock)
-![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/r-gwidgetsrgtk2-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/r-gwidgetsrgtk2-feedstock)
 
 Current release info
 ====================
@@ -51,6 +52,8 @@ conda search r-gwidgetsrgtk2 --channel conda-forge
 
 About conda-forge
 =================
+
+[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
 
 conda-forge is a community-led conda channel of installable packages.
 In order to provide high-quality builds, the process has been automated into the
@@ -110,10 +113,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@bgruening](https://github.com/bgruening/)
-* [@cbrueffer](https://github.com/cbrueffer/)
-* [@daler](https://github.com/daler/)
-* [@dbast](https://github.com/dbast/)
-* [@jdblischak](https://github.com/jdblischak/)
-* [@johanneskoester](https://github.com/johanneskoester/)
+* [@conda-forge/r](https://github.com/conda-forge/r/)
 

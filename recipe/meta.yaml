@@ -13,17 +13,16 @@ source:
   sha256: 95309d4349fc6cbafa7265a3aba9b6969b7514a0eeefe0b0528af6bf9cc33d2c
 
 build:
-  # GTK2 not available on Windows
-  skip: True  # [win]
   merge_build_host: True  # [win]
-  number: 0
+  number: 1
+  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
 
 requirements:
   build:
-
+    - {{posix}}zip               # [win]
   host:
     - r-base
     - r-rgtk2
@@ -37,7 +36,8 @@ requirements:
 
 test:
   commands:
-    - $R -e "library('gWidgetsRGtk2')"           # [not win]
+    - xvfb-run -a bash -c "$R -e \"library('cairoDevice')\""  # [linux]
+    - $R -e "library('cairoDevice')"             # [osx]
     - "\"%R%\" -e \"library('gWidgetsRGtk2')\""  # [win]
 
 about:
@@ -49,12 +49,7 @@ about:
 
 extra:
   recipe-maintainers:
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
+    - conda-forge/r
 
 # Package: gWidgetsRGtk2
 # Version: 0.0-86
