@@ -36,7 +36,8 @@ requirements:
 
 test:
   commands:
-    - $R -e "library('gWidgetsRGtk2')"           # [not win]
+    - xvfb-run -a bash -c "$R -e \"library('cairoDevice')\""  # [linux]
+    - $R -e "library('cairoDevice')"             # [osx]
     - "\"%R%\" -e \"library('gWidgetsRGtk2')\""  # [win]
 
 about:
