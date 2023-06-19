@@ -1,11 +1,11 @@
-About r-gwidgetsrgtk2
-=====================
+About r-gwidgetsrgtk2-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-gwidgetsrgtk2-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=gWidgetsRGtk2
 
 Package license: GPL (>= 2)
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-gwidgetsrgtk2-feedstock/blob/main/LICENSE.txt)
 
 Summary: Port of the gWidgets API to the RGtk2 toolkit.
 
